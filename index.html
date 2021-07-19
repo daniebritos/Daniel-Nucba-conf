@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>NUCBA-CONF</h1>
+                <p>Somos chetos...</p>
+                <p>Chetos mall!</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <P class="price">$500</P>
+                <p>VIP + FOTO</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <p class="price">$200</p>
+                <p>AL FONDO Y 🍻 </p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9747;</span>
+                Menu
+            </button>
+
+            <ul id="menu-list">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Speakers</a>
+                </li>
+                <li>
+                    <a href="">Precios</a>
+                </li>
+                <li>
+                    <a href="">Code</a>
+                </li>
+                <li>
+                    <a href="">VIP</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon"> 🍖 </span>
+                <h3>Comida</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt harum dolore pariatur magni, explicabo consectetur
+                    cupiditate ratione, dolor eveniet similique obcaecati placeat
+                    voluptates nostrum ex laudantium dolorem. Eveniet, magnam quasi?
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon"> 🍺 </span>
+                <h3>Birra</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt harum dolore pariatur magni, explicabo consectetur
+                    cupiditate ratione, dolor eveniet similique obcaecati placeat
+                    voluptates nostrum ex laudantium dolorem. Eveniet, magnam quasi?
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon"> 💻 </span>
+                <h3>Code Baby</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem excepturi praesentium aliquid delectus illo consectetur amet
+                    laudantium? Velit impedit rerum blanditiis,
+                    maiores eveniet, corporis excepturi accusantium soluta ab provident ex.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon"> 🎵 </span>
+                <h3>Musica all Night</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officiis accusantium nostrum esse, sint,
+                    ea autem sunt accusamus fugiat consequatur nulla id animi,
+                    asperiores tempora! Unde, corporis optio.
+                    Cupiditate, pariatur cumque?
+                </p>
+            </div>
+        </section>
+
+        <section class="about">
+            <video src="./assets/People.mp4" autoplay loop></video>
+            <div class="about__details">
+                <h2> VAMOS A CODEAR! </h2>
+                <p>Slim Profile, easy to hold and loaded with chese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button>Info plss &#10142;</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Insta Grams</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/207x208" alt="">
+            <img src="https://source.unsplash.com/random/207x209" alt="">
+            <img src="https://source.unsplash.com/random/207x210" alt="">
+        </section>
+        <script>
+            const navButtom = document.querySelector('button[aria-expanded]');
+            function toggleNav({ target }) {
+                const expandir = target.getAttribute('aria-expanded') == 'true' || false;
+                navButtom.setAttribute('aria-expanded', !expandir);
+            }
+            navButtom.addEventListener('click', toggleNav);
+        </script>
+    </div>
+</body>
+
+</html>
